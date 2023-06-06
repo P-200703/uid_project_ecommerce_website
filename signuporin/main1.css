@@ -1,0 +1,92 @@
+body, html{
+    height:100%;
+    margin:0;
+    font-size:16px;
+    font-family:"Lato", sans-serif;
+    font-weight:400;
+    line-height:1.8em;
+    color:#666;
+  }
+  
+  .pimg1, .pimg2, .pimg3, .pimg4{
+    position:relative;
+  
+    background-position:center;
+    background-size:cover;
+    background-repeat:no-repeat;
+  
+    /*
+      fixed = parallax
+      scroll = normal
+    */
+    background-attachment:fixed;
+  }
+  
+  .pimg1{
+    background-image:url('https://static.timesofisrael.com/www/uploads/2019/04/-%D7%A1%D7%94%D7%A8-%D7%A4%D7%A8%D7%A1%D7%95%D7%9D-%D7%95%D7%94%D7%A4%D7%A7%D7%95%D7%AA-e1554720242329.jpg');
+    min-height:100%;
+  }
+  
+  .pimg2{
+    background-image:url('https://imagesvc.meredithcorp.io/v3/mm/image?q=85&c=sc&poi=face&w=2000&h=1000&url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F23%2F2020%2F06%2F26%2Fclothing-2000.jpg');
+    min-height:400px;
+  }
+  
+  .pimg3{
+    background-image:url('https://www.collinsdictionary.com/images/full/restaurant_135621509.jpg');
+    min-height:400px;
+  }
+  .pimg4{
+    background-image:url('https://image.cnbcfm.com/api/v1/image/106677412-1598364440102-gettyimages-1257920237-vcg111292674571.jpeg?v=1598364963');
+    min-height:400px;
+  }
+
+  .section{
+    text-align:center;
+    padding:50px 80px;
+  }
+  
+  .section-light{
+    background-color:#f4f4f4;
+    color:#666;
+  }
+  
+  .section-dark{
+    background-color:#282e34;
+    color:#ddd;
+  }
+  footer{
+    background-color:#282e34;
+    color:#ddd;
+  }
+  header{
+    background-color:#282e34;
+    color:#ddd;
+  }
+  
+  .ptext{
+    position:absolute;
+    top:50%;
+    width:100%;
+    text-align:center;
+    color:#000;
+    font-size:27px;
+    letter-spacing:8px;
+    text-transform:uppercase;
+  }
+  
+  .ptext .border{
+    background-color:#111;
+    color:#fff;
+    padding:20px;
+  }
+  
+  .ptext .border.trans{
+    background-color:transparent;
+  }
+  
+  @media(max-width:568px){
+    .pimg1, .pimg2, .pimg3{
+      background-attachment:scroll;
+    }
+  }

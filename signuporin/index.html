@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css" />
+    
+    <title>Sign-Up Page</title>
+</head>
+<body>
+	<img style="height:100px; width:500px;border-radius: 25px;" src="https://cdn.discordapp.com/attachments/913423445474299974/916023647284629514/logo_image1.jpg">
+    <h2>Sign in/up Form</h2>
+<div class="container" id="container">
+	<div class="form-container sign-up-container">
+		<form action="main.html" name="signup" onsubmit="return validate()">
+			<h1>Create Account</h1>
+			
+			
+			
+			<span>or use your email for registration</span>
+			<input id="name" type="text" placeholder="Name" />
+			<input id="email"type="email" placeholder="Email" />
+			<input id="password"type="password" placeholder="Password" />
+			
+			<a href="main.html">
+			<button type="submit">Sign Up</button>
+		   </a>
+		</form>
+	</div>
+	<div class="form-container sign-in-container">
+		<form action="main.html"  name="signin" onsubmit="return validat()" >
+			<h1>Sign in</h1>
+			
+			<span>or use your account</span>
+			<input type="email" name="email" placeholder="Email" />
+			<input type="password" name="password" placeholder="Password" />
+			<a href="#">if you are new here then signup =></a>
+			<a href="main.html">
+				<button type="submit">Sign In</button>
+			   </a>
+		</form>
+		
+	</div>
+	<div class="overlay-container">
+		<div class="overlay">
+			<div class="overlay-panel overlay-left">
+				<h1>Welcome Back!</h1>
+				<p>To keep connected with us please login with your personal info</p>
+				<button class="ghost" id="signIn">Sign In</button>
+			</div>
+			<div class="overlay-panel overlay-right">
+				<h1>GREETING, CUSTOMER</h1>
+				<p>WELCOME TO OUR WONDERFUL COLOUR-SPACE MALL.</p>
+				<button class="ghost" id="signUp">Sign Up</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<footer>
+	<h3 >😊 SIGNUP/SIGNIN PAGE FOR THE WONDERFUL COLOURSPACE MALL 🤩</h3>
+</footer>
+<script src="main.js"></script>
+</body>
+</html>

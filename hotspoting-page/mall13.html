@@ -1,0 +1,61 @@
+<html>
+    <head>
+<title>
+    lab6
+</title>
+<style>
+     h1{color:rgb(18, 89, 102);
+
+background-color:wheat;
+}
+    .station {
+      background-color: rgb(46, 111, 116);
+      color: rgb(0, 0, 0);
+      border: 2px solid rgb(192, 181, 146);
+      margin: 20px;
+      padding: 20px;
+    }
+    </style>
+
+    </head>
+    <body class="img" >
+<center>  
+
+<h1><CENTER> WELCOME TO COLOR SPACE MALL </h1>
+        </center> 
+<center>    
+            <img src="a1.jpg"  target="_blank" onmousemove="showCoords(event)"  usemap="#workmap">
+       
+           <map name="workmap">
+            <area  shape="circle"  coords="143,235,35" href="https://image.shutterstock.com/image-illustration/set-white-home-appliances-on-260nw-692475616.jpg" alt="sorry there is an network issue">
+            <area  shape="circle" target="_blank" coords="226,448,37" href="../clothing/index.html" alt="sorry there is an network issue">
+            <area  shape="circle" target="_blank" coords="373,649,33" href="https://midwestcommunity.org/wp-content/uploads/2018/02/Groceries-ThinkstockPhotos-836782690.jpg" alt="sorry there is an network issue">
+            <area  shape="circle" target="_blank" coords="591,477,31" href="https://m.media-amazon.com/images/I/71D9ImsvEtL._UY500_.jpg" alt="sorry there is an network issue">
+            <area  shape="circle" target="_blank" coords="563,236,38" href="../movietheatre/theatrepage.html" alt="sorry there is an network issue">
+            <area  shape="circle" target="_blank" coords="312,115,31" href="../restraunt/RGV.html" alt="sorry there is an network issue">
+
+
+        </map>
+
+    <p id="map"></p>
+
+        <script type="text/javascript">
+
+          function showCoords(event)
+        {
+            var x = event.clientX;
+            var y = event.clientY;
+            var coords = "X coords: "+ x  +" , Y coords: " + y;
+            document.getElementById("map").innerHTML = coords; 
+        }
+
+         
+        </script>
+
+        
+
+</center>
+
+    </body>
+</html>  
+    

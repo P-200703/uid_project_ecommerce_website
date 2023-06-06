@@ -1,0 +1,281 @@
+@import url(https://fonts.googleapis.com/css?family=Audiowide);
+
+/*# sourceMappingURL=style.css.map */
+
+* {margin: 0;padding: 0;position: relative;box-sizing: border-box;}
+
+body {
+    background-color: #fff;
+    font-family: 'Robot' sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+header {
+    width: 100%;
+    background-color: #fff;
+    z-index: 9999;
+    border-bottom: 1px solid #ccc;
+}
+
+.header-main {
+    max-width: 68em;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+a {
+    color: #FF3D2E;
+    text-decoration: none;
+}
+
+.header-main .left, .header-main .right {
+    width: calc(36% - 30px);
+    display: inline-block;
+} 
+
+
+.header-main .center {
+    width: 50px;
+    display: inline-block;
+}
+
+@media (max-width: 790px) {
+    .header-main .left, .header-main .right, .header-main .center {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.header-main a {
+    line-height: 80px;
+    display: inline-block;
+    padding: 0 10px;
+    transition: all 0.3s;
+    margin: 0;
+}
+
+.nav a:hover {
+    background-color: #FF3D2E;
+    color: #fff;
+}
+
+.header-main a:hover {
+    background-color: #FF3D2E;
+    color: #fff;
+}
+
+.left ul {
+}
+
+.center {
+    vertical-align: middle;
+}
+
+.center .logo {
+    background-image: url(https://cdn.discordapp.com/attachments/913423445474299974/916023647284629514/logo_image1.jpg);
+    background-size: 400px;
+    height: 150px;
+    width: 500px;
+    margin: 10px auto;
+    
+    
+    background-repeat: no-repeat;
+}
+
+.header-main .right {
+    text-align: right;
+    
+}
+
+.header-main .right input {
+    padding: 5px;
+    width: 200px;
+    outline: none;
+    border: 1px solid #ccc;
+}
+
+.header-main .right input:focus {
+    border-width: 2px;
+}
+.header-main .right label {
+    width: 200px;
+    position: absolute;
+    right: 60px;
+    display: inline-block;
+    z-index: 9999;
+    top: -5px;
+    font-size: 12px;
+    color: #ccc;
+    transform: translate(-50%, -50%);
+}
+
+.nav {
+    width: 100%;
+    max-width: 68em;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.nav a {
+    padding: 5px 10px;
+}
+
+
+main {
+    width: 100%;
+}
+
+main .hero {
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://entrepreneurship.babson.edu/wp-content/uploads/2020/10/Movie-1200-630.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 150px;
+    color: #fff;
+    text-align: center;
+}
+
+main .hero h1 {
+    font-size: 3em;
+    margin: 15px 0;    
+}
+
+button {
+    cursor: pointer;
+    background-color: #9DBDC6;
+    color: #fff;
+    border: none;
+    padding: 15px;
+    border-radius: 5px;
+    min-width: 200px;
+    margin: 10px;
+    font-size: 18px;
+    transition: all 0.3s;
+    outline: none;
+}
+
+button:hover {
+    background-color: #7F99A1;
+}
+
+button:active {
+    background-color: #677C82;
+}
+
+main .featured {
+    max-width: 68em;
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 50px 0;
+}
+
+.col-3 {
+    width: calc(33% - 26px);
+    max-width: 480px;
+    min-width: 320px;
+    margin: 13px;
+    display: inline-block;
+    text-align: center;
+    background-repeat: no-repeat;
+    transition: background-size 0.3s;
+    height: 250px;
+    color: #fff;
+    background-size: 100% 100%;
+    background-position: center;
+    text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+}
+
+.col-3 .img {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.col-3:first-of-type {
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://m.media-amazon.com/images/M/MV5BNGNlYmIwYzUtYWI4MS00YWM4LTk4ZTktZDBiYzJhZTYwODNhXkEyXkFqcGdeQXVyNTIyODI3MzY@._V1_.jpg);
+}
+
+.col-3:nth-of-type(2n) {
+
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://images.saymedia-content.com/.image/t_share/MTc2Mjk3NjI2NTk2MTU2NjA2/movies-like-harry-potter.jpg);
+}
+
+.col-3:nth-of-type(3n) {
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://nofilmschool.com/sites/default/files/styles/facebook/public/interstellar_primary1.jpeg?itok=7nrVA3No);
+}
+.col-3:nth-of-type(4n) {
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F6%2F2014%2F01%2Fthe-wolf-of-wallstreet-review_0.jpg&q=85);
+}
+.col-3:nth-of-type(5n) {
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://media2.bollywoodhungama.in/wp-content/uploads/2016/03/429191586-306x393.jpg);
+}
+.col-3:nth-of-type(6n) {
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://m.economictimes.com/thumb/msid-80073054,width-1200,height-900,resizemode-4,imgsize-443670/cast-of-drishyam-2.jpg);
+}
+/*last three movies*/
+.col-3:nth-of-type(7n) {
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjwNBNbySUfybCw4OBBW0e7Z8SUV4U-lsc0A&usqp=CAU);
+}
+.col-3:nth-of-type(8n) {
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://upload.wikimedia.org/wikipedia/en/thumb/d/dc/Baahubali_The_Beginning_Movie_Poster.jpg/220px-Baahubali_The_Beginning_Movie_Poster.jpg);
+}
+.col-3:nth-of-type(9n) {
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://img.etimg.com/thumb/msid-41763150,width-1200,height-900,imgsize-119238,overlay-etpanache/photo.jpg);
+}
+.col-3:hover {
+    background-size: 115% 115%;
+}
+.col-3:nth-last-of-type(1n):nth-of-type(9n) {
+    
+}
+
+footer {
+    width: 100%;
+    background-color: #272F32;
+}
+
+.footer-bottom {
+    max-width: 68em;
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 15px;
+}
+
+.footer-bottom .left, .footer-bottom .right {
+    width: 50%;
+    float: left;    
+    padding: 15px;
+    text-transform: lowercase;
+}
+
+.footer-bottom .left ul li{
+    display: inline-block;
+    width: 50%;
+    float: left;
+    text-align: center;
+    cursor: pointer;
+    color: #fff;
+    text-transform: lowercase;
+    padding: 5px;
+    transition: all 0.3s;
+}
+
+.footer-bottom .left ul li:hover {
+    color: #ccc;
+}
+
+.footer-bottom .right .logo {
+    background-image: url(https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX15798545.jpg);
+    background-size: 100px;
+    height: 200px;
+    width: 200px;
+    float: right;    
+}
+
